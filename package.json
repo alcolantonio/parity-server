@@ -48,6 +48,7 @@
     "babel-preset-stage-2": "^6.16.0",
     "body-parser": "^1.13.3",
     "cheerio": "^0.22.0",
+    "colors": "^1.1.2",
     "dotenv": "^1.2.0",
     "express": "^4.14.0",
     "lodash": "^4.16.1",
@@ -91,6 +92,7 @@
     "db:reset": "echo 'db.dropDatabase()' | mongo development",
     "db:reset:test": "echo 'db.dropDatabase()' | mongo test",
     "backup": "babel-node bin/backup.js",
+    "compare": "babel-node bin/compare.js",
     "docs": "apidoc -i routes/ -o docs",
     "deploy": "git push heroku"
   }
