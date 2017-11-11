@@ -157,7 +157,7 @@ def create_app():
         return stats
 
 
-    @app.route('/games')
+    @app.route('/api/games')
     def games():
         games = []
         for game in Game.query.all():
@@ -166,7 +166,7 @@ def create_app():
         return jsonify(games)
 
 
-    @app.route('/games/<id>')
+    @app.route('/api/games/<id>')
     def game(id):
         game = Game.query.get(id)
         return jsonify(game.to_dict())
